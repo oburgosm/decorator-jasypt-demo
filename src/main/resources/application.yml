@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: demo-datasource-decorator
+    datasource:
+      username: sa
+      password: ENC('sa')
+  jpa:
+    properties:
+      hibernate.hbm2ddl.auto: update
+      hibernate.dialect: org.hibernate.dialect.H2Dialect
+      hibernate.connection.autocommit: false
+decorator:
+  datasource:
+    enabled: true
+    sleuth:
+      enabled: false
+    datasource-proxy:
+      slow-query:
+        threshold: 300
