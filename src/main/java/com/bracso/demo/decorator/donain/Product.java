@@ -10,7 +10,7 @@ import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 
 /**
- * @author Capgemini
+ * @author <a href="mailto:oscarbma@ext.inditex.com">Óscar Burgos Martín</a>
  */
 @Entity
 public class Product implements Serializable {

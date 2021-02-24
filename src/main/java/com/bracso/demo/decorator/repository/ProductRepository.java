@@ -7,7 +7,7 @@ import com.bracso.demo.decorator.donain.Product;
 
 
 /**
- * @author Capgemini
+ * @author <a href="mailto:oscarbma@ext.inditex.com">Óscar Burgos Martín</a>
  */
 @Repository
 public interface ProductRepository extends JpaRepository<Product, Long> {

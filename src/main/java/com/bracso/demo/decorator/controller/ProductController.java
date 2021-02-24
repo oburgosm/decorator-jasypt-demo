@@ -16,7 +16,7 @@ import com.bracso.demo.decorator.donain.Product;
 import com.bracso.demo.decorator.repository.ProductRepository;
 
 /**
- * @author Capgemini
+ * @author <a href="mailto:oscarbma@ext.inditex.com">Óscar Burgos Martín</a>
  */
 @Validated
 @RestController
@@ -26,14 +26,6 @@ public class ProductController {
     @Resource
     private ProductRepository productRepository;
 
-    /**
-     * Inserta dos productos en el ds1
-     *
-     * @param name
-     * @param name
-     * @return
-     * @throws SQLException
-     */
     @GetMapping("/insert/{name}")
     @Transactional
     public List<Product> insert(@PathVariable String name)
@@ -44,11 +36,7 @@ public class ProductController {
         return this.findAll();
     }
 
-    /**
-     * Lista el repository1
-     *
-     * @return
-     */
+
     @GetMapping("list")
     @Transactional(readOnly = true)
     public List<Product> findAll() {
