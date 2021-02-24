@@ -15,7 +15,7 @@
     <description>Demo for DataSource Decorator</description>
     <properties>
         <java.version>11</java.version>
-        <data-source-decorator.version>1.6.2</data-source-decorator.version>
+        <data-source-decorator.version>1.6.3</data-source-decorator.version>
         <jasypt.version>3.0.3</jasypt.version>
     </properties>
     <dependencyManagement>
